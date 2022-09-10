@@ -16,7 +16,7 @@ def display_player_grid(grid):
             if player == "-":
                 print(player, end="                    ")
             else:
-                print(player, end="                ")
+                print(player, end="                 ")
         print()
 
 def index_2d(myList, v):
@@ -35,16 +35,30 @@ def check_win(grid):
 
 def moves_A_level1(move):
     list_of_B = ["B-P1","B-P2","B-P3","B-P4","B-P5"]
+    
     if move == "P1:F":
         r, c = index_2d(grid, "A-P1")
-        if grid[r-1][c] == '-' or list_of_B.includes(grid[r-1][c]):
+        if (grid[r-1][c] == '-' or list_of_B.includes(grid[r-1][c])) and r>0:
             grid[r-1][c] = "A-P1"
-            grid
+            grid[r][c] = '-'
 
     if move == "P1:B":
         r, c = index_2d(grid, "A-P1")
-        if grid[r][c] == '-' or list_of_B.includes(grid[r][c]):
-            grid[r][c] = "A-P1"
+        if (grid[r+1][c] == '-' or list_of_B.includes(grid[r+1][c])) and r<4:
+            grid[r+1][c] = "A-P1"
+            grid[r][c] = '-'
+    
+    if move == "P1:R":
+        r, c = index_2d(grid, "A-P1")
+        if (grid[r][c+1] == '-' or list_of_B.includes(grid[r][c+1])) and c<4:
+            grid[r][c+1] = "A-P1"
+            grid[r][c] = '-'
+
+    if move == "P1:L":
+        r, c = index_2d(grid, "A-P1")
+        if (grid[r][c-1] == '-' or list_of_B.includes(grid[r][c-1])) and c>0:
+            grid[r][c-1] = "A-P1"
+            grid[r][c] = '-'
         
 
 
@@ -70,8 +84,9 @@ if __name__ == '__main__':
         grid[4][i] = "A-"+player_A[i]
     display_player_grid(grid)
 
+    print("Enter move:")
     moves_A_level1("P1:F")
     
     #check_win(grid)
     
-    
+    display_player_grid(grid)
