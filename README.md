@@ -1,4 +1,8 @@
 # SD_2022_19BCT0240
- HitWicket test
+ HitWicket SD test 19BCT0240
 
-## This is a test case
+## RUN on python cmd
+
+The program runs for level1 
+
+## run 5_playerchess.py on terminal cmd

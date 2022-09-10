@@ -28,20 +28,22 @@ def index_2d(myList, v):
 def check_win(grid):
     list_of_B = ["B-P1","B-P2","B-P3","B-P4","B-P5"]
     list_of_A = ["A-P1","A-P2","A-P3","A-P4","A-P5"]
+    
     for r in grid:
         for c in r:
             if c in list_of_B:
                 i = 1
-                return 
+                
+                 
 
     for r in grid:
         for c in r:
             if c in list_of_A:
                 j = 1
-                return 
-    if i == 1:
+                
+    if i != 1:
         return "A"
-    if j == 1:
+    if j != 1:
         return "B"
     
     
