@@ -9,7 +9,7 @@ grid = [
 ['-',	'-'	,	'-'		,'-'	,	'-'],
 ['-',	'-'	,	'-'		,'-'	,	'-']
 ]
-
+# display GUI grid for the game
 def display_player_grid(grid):
     print("Current Grid:")
     for player_row in grid:
@@ -25,6 +25,7 @@ def index_2d(myList, v):
         if v in x:
             return i, x.index(v)
 
+#check winner of game
 def check_win(grid):
     list_of_B = ["B-P1","B-P2","B-P3","B-P4","B-P5"]
     list_of_A = ["A-P1","A-P2","A-P3","A-P4","A-P5"]
@@ -279,7 +280,7 @@ def moves_B_level1():
     
     if move == "P4:B":
         r, c = index_2d(grid, "B-P4")
-        if (grid[r-1][c] == '-' or (grid[r][c-1] in list_of_A)) and r>0:
+        if (grid[r-1][c] == '-' or (grid[r-1][c] in list_of_A)) and r>0:
             grid[r-1][c] = "B-P4"
             grid[r][c] = '-'
 
