@@ -64,19 +64,19 @@ def moves_A_level1():
 
     if move == "P1:B":
         r, c = index_2d(grid, "A-P1")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_B)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_B)) and r<4:
             grid[r+1][c] = "A-P1"
             grid[r][c] = '-'
     
     if move == "P1:R":
         r, c = index_2d(grid, "A-P1")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_B)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_B)) and c<4:
             grid[r][c+1] = "A-P1"
             grid[r][c] = '-'
 
     if move == "P1:L":
         r, c = index_2d(grid, "A-P1")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_B)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_B)) and c>0:
             grid[r][c-1] = "A-P1"
             grid[r][c] = '-'
         
@@ -90,19 +90,19 @@ def moves_A_level1():
 
     if move == "P2:B":
         r, c = index_2d(grid, "A-P2")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_B)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_B)) and r<4:
             grid[r+1][c] = "A-P2"
             grid[r][c] = '-'
     
     if move == "P2:R":
         r, c = index_2d(grid, "A-P2")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_B)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_B)) and c<4:
             grid[r][c+1] = "A-P2"
             grid[r][c] = '-'
 
     if move == "P2:L":
         r, c = index_2d(grid, "A-P2")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_B)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_B)) and c>0:
             grid[r][c-1] = "A-P2"
             grid[r][c] = '-'
 
@@ -116,19 +116,19 @@ def moves_A_level1():
 
     if move == "P3:B":
         r, c = index_2d(grid, "A-P3")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_B)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_B)) and r<4:
             grid[r+1][c] = "A-P3"
             grid[r][c] = '-'
     
     if move == "P3:R":
         r, c = index_2d(grid, "A-P3")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_B)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_B)) and c<4:
             grid[r][c+1] = "A-P3"
             grid[r][c] = '-'
 
     if move == "P3:L":
         r, c = index_2d(grid, "A-P3")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_B)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_B)) and c>0:
             grid[r][c-1] = "A-P3"
             grid[r][c] = '-'
 
@@ -142,19 +142,19 @@ def moves_A_level1():
 
     if move == "P4:B":
         r, c = index_2d(grid, "A-P4")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_B)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_B)) and r<4:
             grid[r+1][c] = "A-P4"
             grid[r][c] = '-'
     
     if move == "P4:R":
         r, c = index_2d(grid, "A-P4")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_B)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_B)) and c<4:
             grid[r][c+1] = "A-P4"
             grid[r][c] = '-'
 
     if move == "P4:L":
         r, c = index_2d(grid, "A-P4")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_B)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_B)) and c>0:
             grid[r][c-1] = "A-P4"
             grid[r][c] = '-'
 
@@ -168,29 +168,28 @@ def moves_A_level1():
 
     if move == "P5:B":
         r, c = index_2d(grid, "A-P5")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_B)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_B)) and r<4:
             grid[r+1][c] = "A-P5"
             grid[r][c] = '-'
     
     if move == "P5:R":
         r, c = index_2d(grid, "A-P5")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_B)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_B)) and c<4:
             grid[r][c+1] = "A-P5"
             grid[r][c] = '-'
 
     if move == "P5:L":
         r, c = index_2d(grid, "A-P5")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_B)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_B)) and c>0:
             grid[r][c-1] = "A-P5"
             grid[r][c] = '-'
 
-    else: 
-        print("Sorry cant move to that positions Enter again !")
-        
+   
 
 
 def moves_B_level1():
     list_of_A = ["A-P1","A-P2","A-P3","A-P4","A-P5"]
+
     print("Enter PLAYER B move:") # Enter exact characters P1:F, P2:F, P1:L, etc.....
     move = input()
     
@@ -203,20 +202,22 @@ def moves_B_level1():
             grid[r][c] = '-'
 
     if move == "P1:F":
+        
         r, c = index_2d(grid, "B-P1")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_A)) and r<4:
+        print(r,c)
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_A)) and r<4:
             grid[r+1][c] = "B-P1"
             grid[r][c] = '-'
     
     if move == "P1:L":
         r, c = index_2d(grid, "B-P1")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_A)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c-1] in list_of_A)) and c<4:
             grid[r][c+1] = "B-P1"
             grid[r][c] = '-'
 
     if move == "P1:R":
         r, c = index_2d(grid, "B-P1")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_A)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_A)) and c>0:
             grid[r][c-1] = "B-P1"
             grid[r][c] = '-'
         
@@ -230,19 +231,19 @@ def moves_B_level1():
 
     if move == "P2:F":
         r, c = index_2d(grid, "B-P2")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_A)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_A)) and r<4:
             grid[r+1][c] = "B-P2"
             grid[r][c] = '-'
     
     if move == "P2:L":
         r, c = index_2d(grid, "B-P2")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_A)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_A)) and c<4:
             grid[r][c+1] = "B-P2"
             grid[r][c] = '-'
 
     if move == "P2:R":
         r, c = index_2d(grid, "B-P2")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_A)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_A)) and c>0:
             grid[r][c-1] = "B-P2"
             grid[r][c] = '-'
 
@@ -256,19 +257,19 @@ def moves_B_level1():
 
     if move == "P3:F":
         r, c = index_2d(grid, "B-P3")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_A)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_A)) and r<4:
             grid[r+1][c] = "B-P3"
             grid[r][c] = '-'
     
     if move == "P3:L":
         r, c = index_2d(grid, "B-P3")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_A)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_A)) and c<4:
             grid[r][c+1] = "B-P3"
             grid[r][c] = '-'
 
     if move == "P3:R":
         r, c = index_2d(grid, "B-P3")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_A)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_A)) and c>0:
             grid[r][c-1] = "B-P3"
             grid[r][c] = '-'
 
@@ -276,25 +277,25 @@ def moves_B_level1():
     
     if move == "P4:B":
         r, c = index_2d(grid, "B-P4")
-        if (grid[r-1][c] == '-' or (grid[r-1][c] in list_of_A)) and r>0:
+        if (grid[r-1][c] == '-' or (grid[r][c-1] in list_of_A)) and r>0:
             grid[r-1][c] = "B-P4"
             grid[r][c] = '-'
 
     if move == "P4:F":
         r, c = index_2d(grid, "B-P4")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_A)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_A)) and r<4:
             grid[r+1][c] = "B-P4"
             grid[r][c] = '-'
     
     if move == "P4:L":
         r, c = index_2d(grid, "B-P4")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_A)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_A)) and c<4:
             grid[r][c+1] = "B-P4"
             grid[r][c] = '-'
 
     if move == "P4:R":
         r, c = index_2d(grid, "B-P4")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_A)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_A)) and c>0:
             grid[r][c-1] = "B-P4"
             grid[r][c] = '-'
 
@@ -308,24 +309,23 @@ def moves_B_level1():
 
     if move == "P5:F":
         r, c = index_2d(grid, "B-P5")
-        if (grid[r+1][c] == '-' or (grid[r-1][c] in list_of_A)) and r<4:
+        if (grid[r+1][c] == '-' or (grid[r+1][c] in list_of_A)) and r<4:
             grid[r+1][c] = "B-P5"
             grid[r][c] = '-'
     
     if move == "P5:L":
         r, c = index_2d(grid, "B-P5")
-        if (grid[r][c+1] == '-' or (grid[r-1][c] in list_of_A)) and c<4:
+        if (grid[r][c+1] == '-' or (grid[r][c+1] in list_of_A)) and c<4:
             grid[r][c+1] = "B-P5"
             grid[r][c] = '-'
 
     if move == "P5:R":
         r, c = index_2d(grid, "B-P5")
-        if (grid[r][c-1] == '-' or (grid[r-1][c] in list_of_A)) and c>0:
+        if (grid[r][c-1] == '-' or (grid[r][c-1] in list_of_A)) and c>0:
             grid[r][c-1] = "B-P5"
             grid[r][c] = '-'
 
-    else: 
-        print("Sorry cant move to that positions Enter again !")
+   
      
 
 
